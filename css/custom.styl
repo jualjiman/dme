@@ -27,6 +27,9 @@ hr
 	height: 1px
 	margin: 22px 0 22px 0
 
+h1
+	color textoPrimario
+	font-weight 300
 
 header
 	position relative
@@ -42,15 +45,18 @@ header
 	border-radius: 0
 	border none
 	background: transparent
+	transition margin-bottom 0.5s ease
 
 	.navbar-header
 		margin-bottom: 20px
 
 		.navbar-brand
 			padding-top 12px
+			transition padding-top 0.5s ease
 
 			img
 				width 175px
+				transition width 0.5s ease
 	
 	.navbar-collapse
 		margin-top: 40px
@@ -79,14 +85,21 @@ header
 			.active
 				a
 					btnNavSel()			
+
+.small
+	margin-bottom 0
+	.navbar-header
+		.navbar-brand
+			padding-top 0 !important
+			img
+				width 150px !important
+	.navbar-collapse
+			margin-top: 2px !important
+
 .main-slider
 	height 500px
 	background #ccc
 	border-bootom: solid 1px #BBBBBB
-
-h1
-	color textoPrimario
-	font-weight 300
 
 footer
 	background pie
