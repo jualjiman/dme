@@ -1,10 +1,14 @@
+//===============IMPORT==============================
+ @import "fonts.css"
 // ==============VARIABLES===========================
+azulclaro = #8cc6ec
 azul = #428bca
 azulobscuro = #2D4A64
 bordeazul = #357ebd;
 
 textoPrimario = #4E4E50
 textoSecundario = #797979
+blanco = #f2f2f2
 
 pie = #345778
 piebajo = #305171
@@ -101,6 +105,10 @@ header
 	background #ccc
 	border-bootom: solid 1px #BBBBBB
 
+.contact-jumbotron
+	min-height 50px
+	background azul
+
 footer
 	background pie
 	padding-bottom 25px
@@ -127,9 +135,20 @@ footer
 		color letrasfooter
 		font-size 12px
 		float left
-		
 
-@media (min-width: 768px)
+// ===================GENERALES================================================
+.padding-bottom
+	padding-bottom 25px
+
+.padding-top
+	padding-top 25px
+
+.dir
+	color blanco
+	min-height 100px
+// ===================MEDIA QUERIES============================================
+
+@media (min-width: 992px)
 	.navbar-default
 		.navbar-collapse
 			margin-top: 25px;

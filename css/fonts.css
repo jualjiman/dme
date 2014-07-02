@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?dz77hd');
-	src:url('fonts/icomoon.eot?#iefixdz77hd') format('embedded-opentype'),
-		url('fonts/icomoon.woff?dz77hd') format('woff'),
-		url('fonts/icomoon.ttf?dz77hd') format('truetype'),
-		url('fonts/icomoon.svg?dz77hd#icomoon') format('svg');
+	src:url('../fonts/icons/icomoon.eot?dz77hd');
+	src:url('../fonts/icons/icomoon.eot?#iefixdz77hd') format('embedded-opentype'),
+		url('../fonts/icons/icomoon.woff?dz77hd') format('woff'),
+		url('../fonts/icons/icomoon.ttf?dz77hd') format('truetype'),
+		url('../fonts/icons/icomoon.svg?dz77hd#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -25,10 +25,17 @@
 
 .icon-uniE600:before {
 	content: "\e600";
+	padding-right: 15px;
 }
 .icon-phone:before {
 	content: "\e601";
+	padding-right: 15px;
 }
 .icon-location:before {
 	content: "\e602";
+	padding-right: 15px;
+}
+.icon-mobile:before {
+	content: "\e603";
+	padding-right: 15px;
 }
