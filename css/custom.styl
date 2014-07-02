@@ -1,12 +1,14 @@
 // ==============VARIABLES===========================
-azul = #0088cc
+azul = #428bca
+azulobscuro = #2D4A64
+bordeazul = #357ebd;
 
 textoPrimario = #4E4E50
-textoSecundario = #777777
+textoSecundario = #797979
 
 pie = #345778
 piebajo = #305171
-letrasfooter = #458ece
+letrasfooter = #92B3D1
 
 // ==============MIXINS==============================
 btnNavSel()
@@ -16,7 +18,15 @@ btnNavSel()
 // ==============TODO LO DEMAS========================
 
 *
-	font-family 'Open Sans', sans-serif;
+	font-family 'Open Sans', sans-serif
+
+hr 
+	background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.2), transparent)
+	background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2), transparent)
+	border: 0
+	height: 1px
+	margin: 22px 0 22px 0
+
 
 header
 	position relative
@@ -25,10 +35,13 @@ header
 	border-bottom solid 1px #e7e7e7
 	border-radius: 0;
 	box-shadow 0 4px 40px rgba(0, 0, 0, 0.4)
+	background: linear-gradient( #f6f6f6, white)
+	border-top 5px solid #ededed
 
 .navbar-default
-	border-radius: 0;
+	border-radius: 0
 	border none
+	background: transparent
 
 	.navbar-header
 		margin-bottom: 20px
@@ -40,7 +53,7 @@ header
 				width 175px
 	
 	.navbar-collapse
-		margin-top: 40px;
+		margin-top: 40px
 
 
 		.navbar-nav
@@ -69,18 +82,11 @@ header
 .main-slider
 	height 500px
 	background #ccc
-	border-bottom solid 4px azul
-
-.main-content
-	.mainMessage
-		text-align center
+	border-bootom: solid 1px #BBBBBB
 
 h1
 	color textoPrimario
-
-h2
-	color textoSecundario
-	font-size 22px
+	font-weight 300
 
 footer
 	background pie
@@ -126,6 +132,7 @@ footer
 					display inline-block
 					width 24%
 		.copyright 
+			background azulobscuro
 			float none
 			text-align center
 					
