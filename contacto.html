@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>.:Eficiencia médica digital</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!-- ==================================CSS====================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/custom.css">
+<!-- ==================================CSS====================================== -->
+</head>
+<body>
+	<header class="navbar-fixed-top">
+		<div class="container">
+			<nav class="navbar navbar-default" role="navigation">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">
+			      	<img src="images/logo.png" alt="">
+			      </a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li><a href="index.html">Home</a></li>
+			        <li><a href="nosotros.html">Nosotros</a></li>
+			        <li><a href="productos.html">Productos</a></li>
+			        <li><a href="clientes.html">Clientes</a></li>
+			        <li><a href="noticias.html">Noticias y eventos</a></li>
+			        <li class="active"><a href="contacto.html">Contacto</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+		</div>
+	</header>
+	<div id="mainContent" class="topAutoPadding">
+		<div class="jumbotron killMargins">
+	      <h1 class="killMargins">Contacto</h1>
+	    </div>
+	    <div class="container-fluid" id="map-content"></div>
+	    <div class="container padding-bottom">
+	    	<h2>Estamos a tus ordenes, envíanos un email o localizanos con las siguiente información.</h2>
+	    	<form role="form">
+	    		<div class="container">
+	    		<div class="row">
+			  		<div class="col-sm-6 form-group">
+			    		<label for="tfName">Nombre</label>
+			    		<input type="text" class="form-control" id="tfName" placeholder="¿Cual es su nombre?">
+			  		</div>
+			  		<div class="col-sm-6 form-group">
+			    		<label for="tfEmail">Email</label>
+			    		<input type="email" class="form-control" id="tfEmail" placeholder="¿Cual es su email?">
+			  		</div>
+			  		<div class="col-xs-12 padding-bottom">
+			  			<textarea placeholder="¿En que podemos ayudarle?" id="tfDescription" class="form-control"></textarea>
+			  		</div>
+			  		<div class="col-md-12">
+			  			<button type="submit" class="btn btn-primary pull-right">Enviar</button>
+			  		</div>
+			  	</div>
+			  	</div>
+			</form>
+	    </div>
+	   	<div class="contact-jumbotron">
+	   		<div class="container padding-top padding-bottom">
+	   			<div class="col-sm-6 col-lg-3 dir">
+	   				<strong>EMD México</strong> <br>
+	   				<span class="icon-location"></span>Amores 707 interior 402 Col. Del Valle Del. Benito Juárez, México D.F <br>
+					<span class="icon-uniE600"></span>(55) 43-36-00-42 <br>
+	   			</div>
+	   			<div class="col-sm-6 col-lg-3 dir">
+	   				<strong>Víctor Ortíz Dajda</strong> <br>
+					<span class="icon-phone"></span>(55) 43-36-00-42 <br>
+					<span class="icon-mobile"></span>044 (55) 45-12-15-19 <br>
+					<span class="icon-uniE600"></span>victorortiz@emdmexico.com <br>
+
+	   			</div>
+	   			<div class="col-sm-6 col-lg-3 dir">
+	   				<strong>Alejandro Zarco González</strong><br>
+					<span class="icon-phone"></span>(55) 43-36-00-42 <br>
+					<span class="icon-mobile"></span>044 (55) 52-14-22-09 <br>
+					<span class="icon-uniE600"></span>alejandrozarco@emdmexico.com <br>
+	   			</div>
+	   			<div class="col-sm-6 col-lg-3 dir">
+	   				<strong>Alejandro Villamizar</strong><br>
+					<span class="icon-phone"></span>(55) 39-23-10-97<br>
+					<span class="icon-uniE600"></span>alejandrovillamizar@emdmexico.com<br>
+
+	   			</div>
+	   		</div>
+		</div>
+    </div>
+	<footer>
+		<div class="footernav">
+			<div class="container">
+				<div class="copyright">
+					© Copyright - Eficiencia Medica Digital 2014
+				</div>
+				<ul class="nav nav-footer">
+				  	<li><a href="index.html">Home</a></li>
+			        <li><a href="nosotros.html">Nosotros</a></li>
+			        <li><a href="productos.html">Productos</a></li>
+			        <li><a href="clientes.html">Clientes</a></li>
+			        <li><a href="noticias.html">Noticias y eventos</a></li>
+			        <li><a href="contacto.html">Contacto</a></li>
+			        <li><a href="#">Aviso de privacidad</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+
+<!-- ===================================JS====================================== -->
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
+	<!-- ===================================JS====================================== -->
+</body>
+</html>

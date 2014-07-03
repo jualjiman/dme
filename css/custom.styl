@@ -8,7 +8,9 @@ bordeazul = #357ebd;
 
 textoPrimario = #4E4E50
 textoSecundario = #797979
-blanco = #f2f2f2
+grisClaro = #f2f2f2
+
+gris = #eeeeee 
 
 pie = #345778
 piebajo = #305171
@@ -34,6 +36,8 @@ hr
 h1
 	color textoPrimario
 	font-weight 300
+body
+	background gris
 
 header
 	position relative
@@ -41,7 +45,7 @@ header
 	background-color: #f8f8f8;
 	border-bottom solid 1px #e7e7e7
 	border-radius: 0;
-	box-shadow 0 4px 40px rgba(0, 0, 0, 0.4)
+	box-shadow 0 4px 20px rgba(0, 0, 0, 0.2)
 	background: linear-gradient( #f6f6f6, white)
 	border-top 5px solid #ededed
 
@@ -49,18 +53,18 @@ header
 	border-radius: 0
 	border none
 	background: transparent
-	transition margin-bottom 0.5s ease
+	transition margin-bottom 0.2s ease
 
 	.navbar-header
 		margin-bottom: 20px
 
 		.navbar-brand
 			padding-top 12px
-			transition padding-top 0.5s ease
+			transition padding-top 0.2s ease
 
 			img
 				width 175px
-				transition width 0.5s ease
+				transition width 0.2s ease
 	
 	.navbar-collapse
 		margin-top: 40px
@@ -109,6 +113,9 @@ header
 	min-height 50px
 	background azul
 
+#mainContent
+	background white
+
 footer
 	background pie
 	padding-bottom 25px
@@ -136,17 +143,42 @@ footer
 		font-size 12px
 		float left
 
+.topAutoPadding
+	padding-top 90px
+
+.btn
+	transition border 0.5s ease, background 0.5s ease, color 0.5s ease
+
+#map-content
+	min-height 300px
+	background grisClaro
 // ===================GENERALES================================================
 .padding-bottom
 	padding-bottom 25px
+
+.padding-bottom-small
+	padding-bottom 10px
 
 .padding-top
 	padding-top 25px
 
 .dir
-	color blanco
+	color grisClaro
 	min-height 100px
+	padding-bottom 10px
+
+.secundaryText
+	font-size 21px
+	font-weight 200
+
+.killMargins
+	margin 0
+
+.widthFit
+	width 100%
+
 // ===================MEDIA QUERIES============================================
+
 
 @media (min-width: 992px)
 	.navbar-default
@@ -167,5 +199,8 @@ footer
 			background azulobscuro
 			float none
 			text-align center
+	.new
+		p
+			margin-top 10px
 					
 
