@@ -105,9 +105,12 @@ header
 			margin-top: 2px !important
 
 .main-slider
-	height 500px
 	background #ccc
-	border-bootom: solid 1px #BBBBBB
+	border-bootom solid 1px #BBBBBB
+	background-size cover
+	background-position center
+	width auto
+	height 500px
 
 .contact-jumbotron
 	min-height 50px
@@ -183,12 +186,17 @@ footer
 
 // ===================MEDIA QUERIES============================================
 
-
 @media (min-width: 992px)
 	.navbar-default
 		.navbar-collapse
 			margin-top: 25px;
 			float right
+	.main-slider
+			height 500px
+
+@media (min-width: 768px) and (max-width: 992px)
+	.main-slider
+		height 400px
 
 @media (max-width: 768px)
 	footer
@@ -206,5 +214,8 @@ footer
 	.new
 		p
 			margin-top 10px
+
+	.main-slider
+		height 250px
 					
 
