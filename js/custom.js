@@ -17,7 +17,8 @@ function initialize() {
 	var marker = new google.maps.Marker({
 	      position: ubicacion,
 	      map: map,
-	      title: 'EMD México'
+	      title: 'Amores 707 interior 402 Col. Del Valle Del. Benito Juárez, México D.F ',
+	      icon: "images/marker.png"
 	});
 }
 
