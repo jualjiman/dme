@@ -39,6 +39,8 @@ $("#btnSend").on("click",function(e){
 	var $name = $("#tfName");
 	var $email = $("#tfEmail");
 	var $message = $("#tfDescription");
+	var email_regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
 	e.preventDefault();
 
 	if( $name.val() !== "" && $email.val() !== "" && $message.val() !== ""){
