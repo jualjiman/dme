@@ -4,7 +4,10 @@
 azulclaro = #8cc6ec
 azul = #428bca
 azulobscuro = #2D4A64
-bordeazul = #357ebd;
+bordeazul = #357ebd
+
+verde = #98c63c
+verdeobscuro = #8ab535
 
 textoPrimario = #4E4E50
 textoSecundario = #797979
@@ -19,6 +22,10 @@ letrasfooter = #92B3D1
 // ==============MIXINS==============================
 btnNavSel()
 	background azul
+	color white
+
+btnNavSelAP()
+	background verdeobscuro
 	color white
 
 // ==============TODO LO DEMAS========================
@@ -71,7 +78,8 @@ header
 
 
 		.navbar-nav
-			padding-top: 10px
+			padding-top: 13px;
+
 			
 			li
 				margin-left 1px
@@ -83,12 +91,18 @@ header
 					padding-top 10px;
 					padding-bottom 10px;
 					border-radius 5px
-					font-weight bold
 					font-size 13px
 					transition all 0.5s ease
 
 					&:hover
 						btnNavSel()
+
+				.ap
+					background verde
+					color white
+
+					&:hover
+						btnNavSelAP()
 
 			.active
 				a
