@@ -44,13 +44,13 @@ $("#btnSend").on("click",function(e){
 	e.preventDefault();
 
 	if( $name.val() !== "" && $email.val() !== "" && $message.val() !== ""){
-			if( email_regex.test(email) === true ){
+			if( email_regex.test($email.val()) === true ){
 				$.post(
 					"contact_process.php",
 					{
-						name:name,
-						email:email,
-						message:message
+						name:$name.val(),
+						email:$email.val(),
+						message:$message.val()
 					},
 					function(response){
 						if( response.indexOf("[OK]") !== -1 ){
