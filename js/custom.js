@@ -2,6 +2,7 @@ $(function(){
 	initialize();
 });
 
+//contact map
 function initialize() {
 
 	var ubicacion = new google.maps.LatLng(19.389027, -99.165297);
@@ -32,4 +33,41 @@ $(document).on("scroll",function(){
         $("nav").removeClass("small");
         // $("#mainContent").addClass("topAutoPadding").removeClass("smallTopAutoPadding");
     }
+});
+
+$("#btnSend").on("click",function(e){
+	var $name = $("#tfName");
+	var $email = $("#tfEmail");
+	var $message = $("#tfDescription");
+	e.preventDefault();
+
+	if( $name.val() !== "" && $email.val() !== "" && $message.val() !== ""){
+			if( email_regex.test(email) === true ){
+				$.post(
+					"contact_process.php",
+					{
+						name:name,
+						email:email,
+						message:message
+					},
+					function(response){
+						if( response.indexOf("[OK]") !== -1 ){
+							$('#contact-answ').html('<strong>Muchas gracias</strong>, El mensaje ha sido enviado satisfactoriamente.').hide().fadeIn();
+							$name.val("");
+							$email.val("");
+							$message.val("");
+						}
+						else{
+							$('#contact-answ').html('<strong>Error</strong> al enviar el mensaje.').hide().fadeIn();
+						}
+					}
+				);
+			}
+			else{
+				$('#contact-answ').html('El <strong>formato de email</strong>  que ingreso es invalido.').hide().fadeIn();
+			}
+		}
+		else{
+			$('#contact-answ').html('<strong>Todos</strong> los campos son requeridos.').hide().fadeIn();
+		}
 });
