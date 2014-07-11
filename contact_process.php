@@ -1,5 +1,5 @@
 <?php
-	$emailto = "Juan Alberto Jimenez Angel <jualjiman@gmail.com>, Juan Alberto Jimenez <blow.it.away@live.com.mx>";//"Alejandro Zarco González <alejandrozarco@emdmexico.com>, Alejandro Villamizar <alejandrovillamizar@emdmexico.com>";
+	$emailto = "Juan Alberto Jimenez Angel <jualjiman@gmail.com>";//, Juan Alberto Jimenez <blow.it.away@live.com.mx>";//"Alejandro Zarco González <alejandrozarco@emdmexico.com>, Alejandro Villamizar <alejandrovillamizar@emdmexico.com>";
 	//
 	$subject = "Contacto emdmexico.com";
 	
