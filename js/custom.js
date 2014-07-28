@@ -1,6 +1,6 @@
 $(function(){
-	startFix();
 	initialize();
+	startFix();
 });
 
 //contact map

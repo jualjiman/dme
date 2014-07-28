@@ -31,16 +31,14 @@ function sameHeight($object, win){
 	    	if(cur > maxHeight)
 	    		maxHeight = cur;
 	    });
+	    var min = (maxHeight*0.8);
 	    $object.each( function(){ 
 	    	cur = $( this ).height();
-	    	min = (maxHeight*0.8);
 	    	if(cur <= min){
 	    		$(this).height(min);
-	    		console.log("si");
 	    	}
 	    	else{
-	    		$( this ).height(maxHeight);
-	    		console.log("no");
+	    		$(this).height(maxHeight);
 	    	}
 	    });
 	// }
