@@ -1,6 +1,6 @@
 $(function(){
-	initialize();
 	startFix();
+	initialize();
 });
 
 //contact map
@@ -26,7 +26,6 @@ function initialize() {
 
 $(window).on('resize', function() {
 	setObjects();
-	console.log("redimencionado");
 });
 
 //resizeable navbar menu

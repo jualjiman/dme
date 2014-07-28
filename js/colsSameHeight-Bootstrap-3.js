@@ -4,6 +4,7 @@ var delay = 1000;//milisecconds
 
 function startFix(){
 	setTimeout(setObjects,delay);
+	console.log("-");
 }
 
 function setObjects(){
@@ -40,6 +41,7 @@ function sameHeight($object, win){
 	    	else{
 	    		$(this).height(maxHeight);
 	    	}
+	    	console.log("1");
 	    });
 	// }
 	// else
