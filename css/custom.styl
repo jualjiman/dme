@@ -1,13 +1,15 @@
 //===============IMPORT==============================
  @import "fonts.css"
 // ==============VARIABLES===========================
-azulclaro = #8cc6ec
-azul = #428bca
-azulobscuro = #2D4A64
-bordeazul = #357ebd
+azul = darken(#3fa3ef,10%) //#428bca
+azulclaro =  lighten(azul,25%) //#8cc6ec
+azulobscuro = darken(azul,10%)//#2D4A64
+bordeazul = darken(azul,10%)//#357ebd
+pie = darken(azul,55%) //#345778
+piebajo = darken(azul,50%) //#305171
 
-verde = #98c63c
-verdeobscuro = #8ab535
+verde = #66cc4b //#01d588 //#98c63c
+verdeobscuro = darken(verde, 10%)//#8ab535
 
 textoPrimario = #4E4E50
 textoSecundario = #797979
@@ -15,14 +17,9 @@ grisClaro = #f2f2f2
 
 gris = #eeeeee 
 
-pie = #345778
-piebajo = #305171
 letrasfooter = #92B3D1
 
 // ==============MIXINS==============================
-btnNavSel()
-	background azul
-	color white
 
 btnNavSelAP()
 	background verdeobscuro
@@ -95,7 +92,8 @@ header
 					transition all 0.5s ease
 
 					&:hover
-						btnNavSel()
+						background azulclaro
+						color white
 
 				.ap
 					background verde
@@ -106,7 +104,8 @@ header
 
 			.active
 				a
-					btnNavSel()			
+					background azul
+					color white
 
 .small
 	margin-bottom 0
@@ -167,6 +166,22 @@ footer
 
 .btn
 	transition border 0.5s ease, background 0.5s ease, color 0.5s ease
+
+.btn-primary.active
+	background-color azulobscuro
+	border-color azulobscuro 
+
+.btn-primary
+	background-color azul
+	border-color azulobscuro
+	&:active 
+	&:focus
+	&:hover
+		@extend .btn-primary.active
+.open
+	> .dropdown-toggle.btn-primary
+		@extend .btn-primary.active
+			
 
 #map-content
 	min-height 300px
