@@ -1,4 +1,5 @@
 $(function(){
+	startFix();
 	initialize();
 });
 
@@ -22,6 +23,11 @@ function initialize() {
 	      icon: "images/marker.png"
 	});
 }
+
+$(window).on('resize', function() {
+	setObjects();
+	console.log("redimencionado");
+});
 
 //resizeable navbar menu
 $(document).on("scroll",function(){
