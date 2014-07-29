@@ -21,12 +21,12 @@ function sameHeight($object, win){
 	var objSize = $object.size();
 	// var init = 0, fin = objSize;
 
-	// if(win > sm){
+	if(win > sm){
 		
 		// iterando los objectos
 		// $object.slice(init,fin).each( function(){
 		$object.each( function(){
-			$( this ).height('initial')
+			$( this ).height('initial');
 			cur = $( this ).height();
 	    	if(cur > maxHeight)
 	    		maxHeight = cur;
@@ -41,9 +41,11 @@ function sameHeight($object, win){
 	    		$(this).height(maxHeight);
 	    	}
 	    });
-	// }
-	// else
-	// {
-	// 	$object.each( function(){ $( this ).height('initial')});
-	//}
+	}
+	else
+	{
+		$object.each( function(){
+			$( this ).height('initial');
+		});
+	}
 }
